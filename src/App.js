@@ -18,11 +18,11 @@ function App() {
                             <>
                                 <Header />
                                 <GetyItem />     
-                                <GetyForm />   
+                                <GetyForm />  
+                               
                             </>
                         }
                     ></Route>
-
                     <Route path='/about' element={<AboutPage />} />
                 </Routes>
 

@@ -1,8 +1,11 @@
 import Card from "./shared/Card";
 
 function GetyItem() {   
-      const title = 'My name is Gbemisola, I am the founder and CEO of Gety Store';
-      const value = 'I am pleased to welcome you';
+      const title = 'Jumia is a Pan-African technology company that is built around a marketplace, \
+      logistics service and payment service. The logistics service enables the delivery of packages \
+      through a network of local partners while the payment services facilitate the payments of online \
+      transactions within Jumia’s ecosystem. It has partnered with more than 110,000 active sellers and \
+      individuals and is a direct competitor to Konga in Nigeria.';
       const showStock = true;  // change to false and see the reaction
       const stock = [
           { id: 1, text: 'Skin care' },
@@ -14,9 +17,8 @@ function GetyItem() {
       return (
         <Card>
           <div>
-              <div>{title.toUpperCase()}</div>
-              <div>{value}</div>
-              {5 + 5}
+              {/* <div>{title.toUpperCase()}</div> */}
+              <div>{title}</div>
               {showStock ? (<div>
                   <h3>Our Female Product Highlight({stock.length})</h3>
                   <ul>

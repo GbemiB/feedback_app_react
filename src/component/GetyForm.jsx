@@ -1,14 +1,14 @@
-import { useState, useContext, useEffect } from 'react'
+import { useState } from 'react'
 import RatingSelect from './RatingSelect'
 import Card from './shared/Card'
 import Button from './shared/Button'
+import { Link } from 'react-router-dom'
 
 function GetyForm() {
   const [text, setText] = useState('')
   const [rating, setRating] = useState(15)
   const [btnDisabled, setBtnDisabled] = useState(true)
   const [message, setMessage] = useState('')
-
 
   // Conditions and responses
   const handleTextChange = ({ target: { value } }) => { // 👈  get the value
@@ -83,6 +83,7 @@ function GetyForm() {
 
         {message && <div className='message'>{message}</div>}
       </form>
+      <Link to='/about'>Go to about</Link> 
     </Card>
   )
 }

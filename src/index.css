@@ -18,7 +18,7 @@ ul {
 }
 
 .container {
-  max-width: 768px;
+  max-width: 100%;
   margin: auto;
   padding: 0 20px;
 }
@@ -226,6 +226,6 @@ input:focus {
   }
 
   .input-group input {
-    width: 80%;
+    width: 30%;
   }
 }
